@@ -4,10 +4,10 @@ description: "关于本站和作者"
 layout: "about"
 
 section_titles:
-    links: "🚀 项目 & 链接"
-    about_me: "👨 关于我"
-    about_site: "🏠 关于网站"
-    timeline: "⏳ 建站历程"
+    links: "项目 & 链接"
+    about_me: "关于我"
+    about_site: "关于网站"
+    timeline: "建站历程"
 
 profile:
     name: "你的名字"
@@ -18,23 +18,23 @@ profile:
 links:
   - title: GitHub
     description: 我的 GitHub 主页，包含开源项目。
-    website: https://github.com/liu-houliang
+    website: https://github.com/yingo-server
     image: brand-github
-  - title: Hugo
-    description: 世界上最快的静态网站构建框架。
-    website: https://gohugo.io
+  - title: YINGO的杂物间
+    description: 独一无二的风格网站。
+    website: https://k.344977.xyz
     image: brand-hugo
 
 about_me:
   - label: "职业"
-    text: "开发者"
+    text: "开发者/学生"
     icon: "briefcase"
   - label: "爱好"
-    text: "编程 / 阅读 / 旅行"
+    text: "编程 / 阅读 / 游戏"
     icon: "bike"
   - label: "邮箱"
-    text: "your@email.com"
-    link: "mailto:your@email.com"
+    text: "18674211622@163.com"
+    link: "mailto:18674211622@163.com"
     icon: "mail"
 
 about_site:
@@ -47,19 +47,19 @@ about_site:
     link: "https://stack.jimmycai.com/"
     icon: "layout"
   - label: "部署"
-    text: "GitHub Pages"
+    text: "GitHub Pages/Netlify"
     icon: "cloud-upload"
 
 ---
 
-## ⏳ 建站历程
+## 建站历程
 
 {{< timeline >}}
-    {{< timeline-item date="2024-01" >}}
+    {{< timeline-item date="2026-07" >}}
     使用 Hugo 和 Stack 主题搭建了这个博客。
     {{< /timeline-item >}}
     
-    {{< timeline-item date="2024-02" >}}
+    {{< timeline-item date="2026-07" >}}
     自定义主题并添加了新功能。
     {{< /timeline-item >}}
 {{< /timeline >}}
