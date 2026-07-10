@@ -10,7 +10,7 @@ section_titles:
     timeline: "建站历程"
 
 profile:
-    name: "你的名字"
+    name: "宋"
     role: "开发者 / 博主"
     bio: "一个热爱技术的开发者，分享知识和经验。"
     tags: ["Hugo", "Web开发", "开源"]
