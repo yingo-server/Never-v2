@@ -1,0 +1,44 @@
+<script>
+(function() {
+    const CACHE_KEY = 'perf_cache';
+    const CACHE_EXPIRY_DAYS = 7;
+    const BENCHMARK_ITERATIONS = 800000;
+    const SLOW_THRESHOLD_MS = 40;
+    const OLD_SITE = 'https://oblog.344977.xyz';
+
+    function runBenchmark() {
+        const start = performance.now();
+        let sum = 0;
+        for (let i = 0; i < BENCHMARK_ITERATIONS; i++) sum += i;
+        return (performance.now() - start) > SLOW_THRESHOLD_MS;
+    }
+
+    function getCachedResult() {
+        try {
+            const raw = localStorage.getItem(CACHE_KEY);
+            if (!raw) return null;
+            const data = JSON.parse(raw);
+            if (Date.now() - data.timestamp > CACHE_EXPIRY_DAYS * 24 * 60 * 60 * 1000) {
+                localStorage.removeItem(CACHE_KEY);
+                return null;
+            }
+            return data.isLowPerf;
+        } catch { return null; }
+    }
+
+    function setCachedResult(isLowPerf) {
+        try {
+            localStorage.setItem(CACHE_KEY, JSON.stringify({ isLowPerf, timestamp: Date.now() }));
+        } catch {}
+    }
+
+    let isLowPerf = getCachedResult();
+    if (isLowPerf === null) {
+        isLowPerf = runBenchmark();
+        setCachedResult(isLowPerf);
+    }
+    if (isLowPerf) {
+        window.location.href = OLD_SITE + window.location.pathname + window.location.search;
+    }
+})();
+</script>
