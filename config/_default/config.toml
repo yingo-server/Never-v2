@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl      = "https://yingo-server.netlify.app/"
+baseurl      = "https://blog.344977.xyz/"
 languageCode = "zh-cn"
 title        = "为何存在的日子"
 
