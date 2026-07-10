@@ -15,7 +15,7 @@ SortBy              = "default"
     lastUpdated = ":date_medium"
 
 [sidebar]
-    emoji    = "🚀"
+    emoji    = ""
     subtitle = "These are wonderful days, and also days of suffering.<br>These are an era of great talent, and also an era of ignorance."
     avatar   = "img/avatar.jpg"
 
