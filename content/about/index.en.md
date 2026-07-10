@@ -4,21 +4,21 @@ description: "About this blog and the author"
 layout: "about"
 
 section_titles:
-    links: "🚀 Projects & Links"
-    about_me: "👨 About Me"
-    about_site: "🏠 About Website"
-    timeline: "⏳ Site Timeline"
+    links: "Projects & Links"
+    about_me: "About Me"
+    about_site: "About Website"
+    timeline: "Site Timeline"
 
 profile:
-    name: "Your Name"
-    role: "Developer / Blogger"
+    name: "Song Weiqi"
+    role: "Developer / Blogger /Student"
     bio: "A passionate developer sharing knowledge and experiences."
     tags: ["Hugo", "Web Dev", "Open Source"]
 
 links:
   - title: GitHub
     description: My GitHub profile with open source projects.
-    website: https://github.com/liu-houliang
+    website: https://github.com/yingo-server
     image: brand-github
   - title: Hugo
     description: The world's fastest framework for building websites.
@@ -30,11 +30,11 @@ about_me:
     text: "Developer"
     icon: "briefcase"
   - label: "Hobbies"
-    text: "Coding / Reading / Travel"
+    text: "Coding / Reading / Games"
     icon: "bike"
   - label: "Email"
-    text: "your@email.com"
-    link: "mailto:your@email.com"
+    text: "18674211622@163.com"
+    link: "mailto:18674211622@163.com"
     icon: "mail"
 
 about_site:
@@ -47,12 +47,12 @@ about_site:
     link: "https://stack.jimmycai.com/"
     icon: "layout"
   - label: "Deploy"
-    text: "GitHub Pages"
+    text: "GitHub Pages/Netlify"
     icon: "cloud-upload"
 
 ---
 
-## ⏳ Site Timeline
+## Site Timeline
 
 {{< timeline >}}
     {{< timeline-item date="2024-01" >}}
